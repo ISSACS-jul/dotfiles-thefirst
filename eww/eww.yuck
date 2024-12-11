@@ -1,0 +1,74 @@
+;; Definir las variables
+
+(defpoll HOUR :interval "5s" `date +\"%I\"`)
+(defpoll MIN :interval "5s" `date +\"%M\"`)
+(defpoll TEMP :interval "5s" "EWW_TEMPS +\"%\"")
+
+;; Definir los widgets
+
+(defwidget reloj [] 
+  (box :class "genwin" :halign "center" :orientation "horizontal" :spacing 0
+    (box 
+    	(label :class "time" :spacing 0 :text HOUR)
+	(label :class "time" :spacing 0 :text ":")
+    	(label :class "time" :spacing 0 :text MIN) 
+    )
+  )
+)
+
+(defwidget monitor []
+	(box :class "contenedor" :haling "center" :orientation "vertical" :spacing 0
+		(box
+			(label :class "IDK" :spacin 0 :text EWW_TEMPS{"AMDGPU_EDGE"})
+		)
+	)
+)
+
+(defwidget fondo []
+	(box :haling "center" :orientation "horizontal" :spacing 0
+		(eventbox
+		:class "hola"
+		)
+	)
+)
+;; Definir las ventanas
+
+(defwindow reloj 
+	:monitor 0
+	:geometry (geometry
+			:x "85%"
+			:y "5%"
+			:width "500px"
+			:height "100px"
+			:anchor "center")
+	:stacking "bg"
+	:focusable "false"
+	(reloj)
+)
+
+(defwindow monitor
+	:monitor 0
+	:geometry (geometry
+			:x "65%"
+			:y "80%"
+			:width "500px"
+			:height "100px")
+	:stacking "bg"
+	:focusable "false"
+	(monitor)
+)
+
+(defwindow fondo
+	:monitor 0
+	:geometry (geometry
+;;			:x 0
+;;			:y 0
+			:width "50%"
+			:height "50%"
+			:anchor "center")
+	:stacking "bg"
+	:focusable "false"
+	(fondo)
+)
+
+

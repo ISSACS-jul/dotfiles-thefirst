@@ -1,0 +1,42 @@
+*{ all: unset; }
+
+/* Contenedor principal del reloj */
+.genwin {
+  border-radius: 100px;                  /* Esquinas redondeadas */
+  background-color: rgba(40, 44, 52,.5); /* Fondo semitransparente */
+  border-width: 5px;
+  border-style: dotted;
+  border-color: #fff;
+  padding: 30px;                          /* Espaciado interno */
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+/* Hora (HOUR) */
+.time {
+  font-family: "digital\-7";
+  font-size: 50px;                        /* Tamaño de fuente grande */
+  font-weight: 300;                      /* Fuente en negrita */
+  color:  #fff;                         /* Color del texto */
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff;
+}
+
+.contenedor {
+	background-color: white
+}
+
+.IDK {
+	color: #000
+}
+
+.hola {
+	background-image: url("/usr/share/backgrounds/fav/katana.jpg");
+	opacity: 0.5;
+}
+
+.hola:hover {
+	background-image: url("/usr/share/backgrounds/fav/katana.jpg");
+	opacity: 1;
+}
