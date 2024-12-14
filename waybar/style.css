@@ -14,7 +14,7 @@ window#waybar {
 .modules-center {
   border-radius: 6px;
   background: #181926;
-  padding: 12px 0;
+  padding: 5px 0 5px 0;
 }
 tooltip {
   color: #a5adcb;
@@ -39,9 +39,11 @@ tooltip * {
 #custom-powermenu,
 #pulseaudio,
 #tray {
+  padding-top: 5px;
 }
 #workspaces {
   border-radius: 4px;
+  padding-right: 4px;
 }
 #workspaces button {
   color: #5b6078;
@@ -75,7 +77,13 @@ tooltip * {
 }
 
 #custom-powermenu {
-  margin: 12px 0 0 0;
-  color: #f5bde6;
+  color: #f5bde6; 
+  padding: 0 4px 5px 0;
 }
+
+#network {
+  color:#8aadf4;
+  padding: 10px 0 5px 0;
+}
+
 

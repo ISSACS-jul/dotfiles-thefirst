@@ -7,19 +7,18 @@
   "modules-left": [
     "clock",
     "custom/sep",
-    "tray"
+    "network"
   ],
   "modules-center": [
     "hyprland/workspaces"
   ],
   "modules-right": [
-    "custom/bluetooth_devices",
+    "tray",
     "custom/sep",
     "temperature",
     "custom/sep",
     "pulseaudio",
     "custom/sep",
-    "network",
     "custom/powermenu"
   ],
   "custom/sep": {
@@ -76,9 +75,9 @@
   },
 "network": {
     "rotate": 90,
-    "interface": "enp5s0",
+    "interface": "wlp6s0",
     "format": "{ifname}",
-    "format-wifi": "{essid} ({signalStrength}%) ",
+    "format-wifi": "{essid} ",
     "format-ethernet": "{ifname} 󰊗",
     "format-disconnected": "", //An empty format will hide the module.
     "tooltip-format": "{ifname} via {gwaddr} 󰊗",
