@@ -30,6 +30,7 @@
 # Nota
 - El cambio de wallpaper aleatorio hace uso de swww con el script en `custom_scripts/walt.sh` cambiar la "carpeta" por la ruta de sus wallpapers
 - La configuracion de firefox se encuentra en `no-dotfiles/firefox/chrome` esta debe ser pegada en la carpeta raiz de su perfil firefox, al cual se puede acceder escribiendo en la bara URL `about:profiles`, tambien puede seguir las instrucciones del github FF-ULTIMA [https://github.com/soulhotel/FF-ULTIMA](https://github.com/soulhotel/FF-ULTIMA) siendo este el creador de este estilo para firefox
+- Para agregar pokemons a la terminal uso [pokemon-colorscripts](https://gitlab.com/phoneybadger/pokemon-colorscripts)
 
 <div align="center">
 
